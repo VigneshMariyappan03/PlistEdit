@@ -1,0 +1,28 @@
+{
+    "name": "cordova-plugin-edit-plist-file",
+    "version": "0.0.3",
+    "description": "Plugin allowing to edit *-info.plist file",
+    "author": "Haythem OUEDERNI <vigneshatp.89@gmail.com>",
+    "cordova": {
+        "id": "cordova-plugin-edit-plist-file",
+        "platforms": [
+            "ios"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/VigneshMariyappan03/PlistEdit.git"
+    },
+    "keywords": [
+        "cordova",
+        "whitelist",
+        "ios9",
+        "ecosystem:cordova",
+        "cordova-ios"
+    ],
+    "engines": [{
+        "name": "cordova",
+        "version": ">=3.5.0"
+    }],
+    "license": "MIT"
+}
