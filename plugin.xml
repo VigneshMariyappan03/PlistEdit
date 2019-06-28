@@ -31,7 +31,7 @@
     <platform name="ios">
         
         <!-- iOS9 whitelisting -->
-        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+        <!--<config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
             <array>
                 <string>twitter</string>
                 <string>fb</string>
@@ -42,12 +42,30 @@
                 <string>fb-messenger</string>
                 <string>instagram</string>
             </array>
-        </config-file>
-		<config-file target="*-Info.plist" parent="NSAppTransportSecurity">
-            <array>
-                <boolean>true</boolean>
-            </array>
-        </config-file>                       
+        </config-file>-->
+        <config-file target="*-Info.plist" parent="App Transport Security Settings">					
+				<dict>
+					<key>Allow Arbitrary Loads</key>
+					<true/>
+					<key>Exception Domains</key>										
+					<dict>
+						<key>uat.ahliunited.com</key>
+						<dict>
+							<key>NSExceptionAllowsInsecureHTTPLoads</key>
+							<true/>
+							<key>NSIncludesSubdomains</key>
+							<true/>
+						</dict>
+						<key>www.mye-bankonline.com</key>
+						<dict>
+							<key>NSExceptionAllowsInsecureHTTPLoads</key>
+							<true/>
+							<key>NSIncludesSubdomains</key>
+							<true/>
+						</dict>
+					</dict>									
+			</dict>
+		</config-file>
     </platform>
     
 </plugin>
