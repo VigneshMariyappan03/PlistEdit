@@ -43,29 +43,11 @@
                 <string>instagram</string>
             </array>
         </config-file>
-        <config-file target="*-Info.plist" parent="NSAppTransportSecurity">					
-				<dict>
-					<key>NSAllowsArbitraryLoads</key>
-					<true/>
-					<key>NSExceptionDomains</key>										
-					<dict>
-						<key>uat.ahliunited.com</key>
-						<dict>
-							<key>NSExceptionAllowsInsecureHTTPLoads</key>
-							<true/>
-							<key>NSIncludesSubdomains</key>
-							<true/>
-						</dict>
-						<key>www.mye-bankonline.com</key>
-						<dict>
-							<key>NSExceptionAllowsInsecureHTTPLoads</key>
-							<true/>
-							<key>NSIncludesSubdomains</key>
-							<true/>
-						</dict>
-					</dict>									
-			</dict>
-		</config-file>
+		<config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+            <array>
+                <boolean>true</boolean>
+            </array>
+        </config-file>                       
     </platform>
     
 </plugin>
